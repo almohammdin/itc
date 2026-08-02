@@ -4,22 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>فرصة استثمارية | شركة المقطورة الدولية ITC</title>
-  <meta name="description" content="فرصة استثمارية في مصنع سعودي قائم يعمل عند 30% من طاقته ويستهدف نمو الإيرادات إلى أكثر من 75 مليون ريال خلال 4 سنوات.">
+  <meta name="description" content="مصنع سعودي قائم بخيار استثمار نمو بقيمة 15 مليون ريال، أو شراكة استراتيجية بإجمالي 35 مليون ريال، وعائد سنوي مستهدف بين %17 و%23 وفق سيناريو التخارج.">
   <meta name="theme-color" content="#071525">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ar_SA">
   <meta property="og:title" content="شركة المقطورة الدولية | فرصة استثمارية">
-  <meta property="og:description" content="مصنع قائم، أصول تتجاوز 52 مليون ريال، وطاقة إنتاجية جاهزة للنمو. اطلع على ملخص الصفقة.">
+  <meta property="og:description" content="خيار نمو بقيمة 15 مليون ريال، أو شراكة استراتيجية بإجمالي 35 مليون ريال. العائد السنوي المستهدف بين %17 و%23 وفق سيناريو التخارج.">
   <meta property="og:url" content="https://almohammdin.github.io/itc/">
-  <meta property="og:image" content="https://almohammdin.github.io/itc/og-itc.png?v=2.0.0">
-  <meta property="og:image:secure_url" content="https://almohammdin.github.io/itc/og-itc.png?v=2.0.0">
-  <meta property="og:image:alt" content="ملخص فرصة الاستثمار في شركة المقطورة الدولية">
+  <meta property="og:image" content="https://almohammdin.github.io/itc/og-itc.png?card=entry-options">
+  <meta property="og:image:secure_url" content="https://almohammdin.github.io/itc/og-itc.png?card=entry-options">
+  <meta property="og:image:alt" content="فرصة استثمارية في شركة المقطورة الدولية بخيارين للدخول">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="شركة المقطورة الدولية | فرصة استثمارية">
-  <meta name="twitter:description" content="مصنع سعودي قائم بطاقة إنتاجية جاهزة للنمو.">
-  <meta name="twitter:image" content="https://almohammdin.github.io/itc/og-itc.png?v=2.0.0">
+  <meta name="twitter:description" content="مصنع سعودي قائم بخيار نمو بقيمة 15 مليون ريال، أو شراكة استراتيجية بإجمالي 35 مليون ريال.">
+  <meta name="twitter:image" content="https://almohammdin.github.io/itc/og-itc.png?card=entry-options">
   <link rel="canonical" href="https://almohammdin.github.io/itc/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,6 +42,7 @@
       --radius:22px;
     }
     *{box-sizing:border-box}
+    [hidden]{display:none!important}
     html{scroll-behavior:smooth}
     body{
       margin:0;
@@ -125,7 +126,10 @@
     }
     .eyebrow::before{content:"";width:28px;height:2px;background:var(--orange)}
     h1{font-size:clamp(38px,5.2vw,70px);line-height:1.13;letter-spacing:-1.5px;margin:0;max-width:760px}
-    .hero-lead{font-size:clamp(17px,2vw,21px);line-height:1.85;color:rgba(255,255,255,.74);max-width:720px;margin:24px 0 0}
+    .hero-pitch{max-width:760px;margin:24px 0 0;padding:18px 20px;border:1px solid rgba(215,183,94,.28);border-inline-start:4px solid var(--gold);border-radius:16px;background:rgba(255,255,255,.055)}
+    .hero-pitch p{margin:0;color:var(--white);font-size:clamp(17px,1.65vw,20px);line-height:1.85;font-weight:500}
+    .hero-pitch small{display:block;margin-top:8px;color:var(--gold);font-size:13px;line-height:1.7}
+    .hero-lead{font-size:15px;line-height:1.85;color:rgba(255,255,255,.62);max-width:720px;margin:14px 0 0}
     .hero-lead strong{color:var(--white);font-weight:700}
     .hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
     .btn{
@@ -158,6 +162,18 @@
     .deal-title{font-weight:700;font-size:19px}
     .deal-caption{font-size:12px;color:rgba(255,255,255,.52);margin-top:2px}
     .deal-badge{font-size:11px;font-weight:700;color:var(--gold);border:1px solid rgba(215,183,94,.35);border-radius:999px;padding:5px 10px;white-space:nowrap}
+    .deal-options{display:grid;gap:10px;margin-top:16px}
+    .deal-option{background:#0c2034;border:1px solid rgba(255,255,255,.1);border-radius:15px;padding:15px}
+    .deal-option-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+    .deal-option-name{font-size:13px;color:var(--white);font-weight:700}
+    .deal-option-type{display:block;font-size:10px;color:rgba(255,255,255,.48);margin-top:1px}
+    .deal-option-amount{font-size:22px;color:var(--gold);font-weight:700}
+    .deal-option-split{font-size:10px;color:rgba(255,255,255,.48);margin-top:7px;padding-top:7px;border-top:1px solid rgba(255,255,255,.08)}
+    .deal-option-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:11px}
+    .deal-option-metric{border-inline-start:1px solid rgba(255,255,255,.1);padding-inline-start:8px}
+    .deal-option-metric:first-child{border-inline-start:0;padding-inline-start:0}
+    .deal-option-metric strong{display:block;color:var(--white);font-size:14px;line-height:1.3}
+    .deal-option-metric span{display:block;color:rgba(255,255,255,.45);font-size:9px;margin-top:3px}
     .deal-main{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.11);margin:18px 0;border-radius:14px;overflow:hidden}
     .deal-main div{background:#0c2034;padding:17px;text-align:center}
     .deal-number{display:block;font-size:29px;line-height:1.2;font-weight:700;color:var(--gold)}
@@ -286,7 +302,6 @@
     .footer-main{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
     .footer-main img{width:104px;height:auto}
     .footer-copy strong{display:block;color:var(--ink)}
-    .footer-copy .footer-version{display:block;margin-top:3px;color:rgba(82,92,108,.62);font-size:.62rem;letter-spacing:.02em}
     .footer-social{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
     .footer-social strong{direction:ltr;font-size:.95rem;color:var(--navy-2)}
     .footer-social a{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--navy);display:inline-flex;align-items:center;justify-content:center}
@@ -354,7 +369,7 @@
         <span data-ar="شركة المقطورة الدولية" data-en="International Trailer Company">شركة المقطورة الدولية</span>
       </div>
       <div class="top-actions">
-        <span class="public-label" data-ar="ملخص استثماري عام" data-en="Public investment teaser">ملخص استثماري عام</span>
+        <span class="public-label" data-ar="فرصة استثمارية" data-en="Investment opportunity">فرصة استثمارية</span>
         <div class="language" role="group" aria-label="Language">
           <button type="button" class="active" data-lang="ar">عربي</button>
           <button type="button" data-lang="en">English</button>
@@ -366,46 +381,66 @@
   <section class="hero">
     <div class="shell hero-grid">
       <div>
-        <div class="eyebrow" data-ar="فرصة ملكية خاصة في قطاع التصنيع السعودي" data-en="Saudi manufacturing private equity opportunity">فرصة ملكية خاصة في قطاع التصنيع السعودي</div>
-        <h1 data-ar="مصنع قائم بطاقة إنتاجية جاهزة للنمو" data-en="An established manufacturer with capacity ready to scale">مصنع قائم بطاقة إنتاجية جاهزة للنمو</h1>
-        <p class="hero-lead" data-ar="شركة المقطورة الدولية مصنع سعودي يعمل منذ 2010 من منشأة تتجاوز 22,000 م² في جدة. يعمل المصنع حاليا عند %30 من طاقته، وحقق صافي ربح في 2025. الاستثمار المقترح يرفع التشغيل والمبيعات باستخدام قاعدة صناعية قائمة." data-en="International Trailer Company is a Saudi manufacturer operating since 2010 from a facility exceeding 22,000 sqm in Jeddah. The plant currently runs at %30 of capacity and remained profitable in 2025. The proposed investment is designed to scale operations and sales from an established industrial base.">شركة المقطورة الدولية مصنع سعودي يعمل منذ 2010 من منشأة تتجاوز 22,000 م² في جدة. يعمل المصنع حاليا عند %30 من طاقته، وحقق صافي ربح في 2025. الاستثمار المقترح يرفع التشغيل والمبيعات باستخدام قاعدة صناعية قائمة.</p>
+        <div class="eyebrow" data-ar="فرصة استثمارية في قطاع التصنيع السعودي" data-en="Saudi manufacturing private equity opportunity">فرصة استثمارية في قطاع التصنيع السعودي</div>
+        <h1 data-ar="مصنع قائم وطاقة إنتاجية جاهزة للنمو" data-en="An established manufacturer with capacity ready to scale">مصنع قائم وطاقة إنتاجية جاهزة للنمو</h1>
+        <div class="hero-pitch">
+          <p data-copy-lang="ar">مصنع سعودي قائم يستهدف رفع الإيرادات من <span class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>22.1M</bdi></span> إلى أكثر من <span class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>75M</bdi></span> خلال 4 سنوات. والدخول متاح باستثمار نمو بقيمة <span class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>15M</bdi></span>، أو شراكة استراتيجية بإجمالي <span class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>35M</bdi></span>.</p>
+          <p data-copy-lang="en" hidden>An established Saudi manufacturer targeting revenue growth from <span class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>22.1M</bdi></span> to more than <span class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>75M</bdi></span> over 4 years, with a <span class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>15M</bdi></span> growth-investment option or a <span class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>35M</bdi></span> strategic-partnership option.</p>
+          <small data-ar="في السيناريو الأساسي: عائد سنوي مستهدف من %19 إلى %23 لخيار النمو، ومن %17 إلى %21 لخيار الشراكة." data-en="Base-case target annual return: %19–%23 for the growth option and %17–%21 for the strategic option.">في السيناريو الأساسي: عائد سنوي مستهدف من %19 إلى %23 لخيار النمو، ومن %17 إلى %21 لخيار الشراكة.</small>
+        </div>
+        <p class="hero-lead" data-ar="بدأت شركة المقطورة الدولية أعمالها في 2010، وتعمل من منشأة تتجاوز مساحتها 22,000 م² في جدة. يستخدم المصنع حاليا %30 من طاقته، وحققت الشركة صافي ربح في 2025." data-en="International Trailer Company has operated since 2010 from a facility exceeding 22,000 sqm in Jeddah. The plant currently uses %30 of its capacity and remained profitable in 2025.">بدأت شركة المقطورة الدولية أعمالها في 2010، وتعمل من منشأة تتجاوز مساحتها 22,000 م² في جدة. يستخدم المصنع حاليا %30 من طاقته، وحققت الشركة صافي ربح في 2025.</p>
         <div class="hero-buttons">
           <a href="#opportunity" class="btn btn-primary"><span data-ar="استعرض الأرقام" data-en="View the numbers">استعرض الأرقام</span><span class="arrow">←</span></a>
-          <a href="#nda" class="btn btn-secondary" data-ar="ما الذي يظهر بعد NDA؟" data-en="What opens after the NDA?">ما الذي يظهر بعد NDA؟</a>
+          <a href="#nda" class="btn btn-secondary" data-ar="ماذا بعد اتفاقية السرية؟" data-en="What opens after the NDA?">ماذا بعد اتفاقية السرية؟</a>
         </div>
       </div>
 
       <aside class="deal-card" aria-label="Investment snapshot">
         <div class="deal-head">
           <div>
-            <div class="deal-title" data-ar="الصفقة في سطرين" data-en="Deal snapshot">الصفقة في سطرين</div>
-            <div class="deal-caption" data-ar="استثمار مباشر بحصة أقلية" data-en="Direct minority equity investment">استثمار مباشر بحصة أقلية</div>
+            <div class="deal-title" data-ar="الصفقة باختصار" data-en="Deal snapshot">الصفقة باختصار</div>
+            <div class="deal-caption" data-ar="استثمار مباشر مقابل حصة أقلية" data-en="Direct minority equity investment">استثمار مباشر مقابل حصة أقلية</div>
           </div>
           <span class="deal-badge">Private Equity</span>
         </div>
-        <div class="deal-main">
-          <div><strong class="deal-number sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>20M</bdi></strong><span class="deal-label" data-ar="استثمار مباشر" data-en="Primary investment">استثمار مباشر</span></div>
-          <div><strong class="deal-number"><bdi>%23.5</bdi></strong><span class="deal-label" data-ar="حصة المستثمر" data-en="Investor equity">حصة المستثمر</span></div>
+        <div class="deal-options">
+          <div class="deal-option">
+            <div class="deal-option-head">
+              <div><span class="deal-option-name" data-ar="خيار النمو" data-en="Growth option">خيار النمو</span><span class="deal-option-type" data-ar="ضخ نقدي | Cash-in" data-en="Cash-in">ضخ نقدي | Cash-in</span></div>
+              <strong class="deal-option-amount sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>15M</bdi></strong>
+            </div>
+            <div class="deal-option-grid">
+              <div class="deal-option-metric"><strong><bdi>%18.75</bdi></strong><span data-ar="حصة المستثمر" data-en="Investor stake">حصة المستثمر</span></div>
+              <div class="deal-option-metric"><strong><bdi>2.0x–2.3x</bdi></strong><span data-ar="مضاعف الاستثمار" data-en="Target MOIC">مضاعف الاستثمار</span></div>
+              <div class="deal-option-metric"><strong><bdi>%19–%23</bdi></strong><span data-ar="عائد سنوي مستهدف" data-en="Target annual return">عائد سنوي مستهدف</span></div>
+            </div>
+            <div class="deal-option-split"><span data-copy-lang="ar">المبلغ بالكامل يضخ في الشركة | التقييم بعد الاستثمار <span class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>80M</bdi></span></span><span data-copy-lang="en" hidden>100% invested into the company | <span class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>80M</bdi></span> post-money valuation</span></div>
+          </div>
+          <div class="deal-option">
+            <div class="deal-option-head">
+              <div><span class="deal-option-name" data-ar="خيار الشراكة" data-en="Strategic option">خيار الشراكة</span><span class="deal-option-type" data-ar="ضخ نقدي وشراء حصة | Cash-in + Cash-out" data-en="Cash-in + Cash-out">ضخ نقدي وشراء حصة | Cash-in + Cash-out</span></div>
+              <strong class="deal-option-amount sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>35M</bdi></strong>
+            </div>
+            <div class="deal-option-grid">
+              <div class="deal-option-metric"><strong><bdi>%41.1</bdi></strong><span data-ar="حصة المستثمر" data-en="Investor stake">حصة المستثمر</span></div>
+              <div class="deal-option-metric"><strong><bdi>1.9x–2.1x</bdi></strong><span data-ar="مضاعف الاستثمار" data-en="Target MOIC">مضاعف الاستثمار</span></div>
+              <div class="deal-option-metric"><strong><bdi>%17–%21</bdi></strong><span data-ar="عائد سنوي مستهدف" data-en="Target annual return">عائد سنوي مستهدف</span></div>
+            </div>
+            <div class="deal-option-split"><span data-copy-lang="ar"><span class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>20M</bdi></span> يضخ في الشركة + <span class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>15M</bdi></span> لشراء حصة من الملاك</span><span data-copy-lang="en" hidden><span class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>20M</bdi></span> cash-in + <span class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>15M</bdi></span> cash-out to existing shareholders</span></div>
+          </div>
         </div>
-        <div class="deal-list">
-          <div class="deal-row"><span data-ar="نوع الاستثمار" data-en="Investment type">نوع الاستثمار</span><strong data-ar="ملكية خاصة مباشرة" data-en="Direct private equity">ملكية خاصة مباشرة</strong></div>
-          <div class="deal-row"><span data-ar="التقييم قبل الاستثمار" data-en="Pre-money valuation">التقييم قبل الاستثمار</span><strong class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>65M</bdi></strong></div>
-          <div class="deal-row"><span data-ar="التقييم بعد الاستثمار" data-en="Post-money valuation">التقييم بعد الاستثمار</span><strong class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>85M</bdi></strong></div>
-          <div class="deal-row"><span data-ar="الحوكمة المقترحة" data-en="Proposed governance">الحوكمة المقترحة</span><strong data-ar="مقعد مجلس وحقوق معلومات" data-en="Board seat & information rights">مقعد مجلس وحقوق معلومات</strong></div>
-          <div class="deal-row"><span data-ar="مستهدف الإيرادات خلال 4 سنوات" data-en="4-year revenue target">مستهدف الإيرادات خلال 4 سنوات</span><strong class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>75M+</bdi></strong></div>
-        </div>
-        <div class="deal-foot" data-ar="الأرقام المستهدفة تقديرية وتخضع للفحص النافي للجهالة والاتفاق النهائي." data-en="Targets are indicative and subject to due diligence and final agreements.">الأرقام المستهدفة تقديرية وتخضع للفحص النافي للجهالة والاتفاق النهائي.</div>
+        <div class="deal-foot"><span data-copy-lang="ar">التقييم قبل الاستثمار <span class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>65M</bdi></span>. العائد المستهدف مبني على تقييم تخارج من <span class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>160M</bdi></span> إلى <span class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>180M</bdi></span> خلال 4 سنوات، ويخضع للفحص النافي للجهالة.</span><span data-copy-lang="en" hidden><span class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>65M</bdi></span> pre-money valuation. Target returns assume a 4-year exit valuation of <span class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>160M</bdi></span> to <span class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>180M</bdi></span> and remain subject to due diligence.</span></div>
       </aside>
     </div>
   </section>
 
   <section class="kpi-band" id="opportunity">
     <div class="shell kpis">
-      <div class="kpi"><strong class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>52M</bdi></strong><span data-ar="إجمالي الأصول 2025" data-en="Total assets in 2025">إجمالي الأصول 2025</span></div>
-      <div class="kpi"><strong><bdi>%30</bdi></strong><span data-ar="استغلال الطاقة الحالي" data-en="Current capacity use">استغلال الطاقة الحالي</span></div>
-      <div class="kpi"><strong><bdi>%36.2</bdi></strong><span data-ar="هامش إجمالي 2025" data-en="2025 gross margin">هامش إجمالي 2025</span></div>
-      <div class="kpi"><strong>83</strong><span data-ar="عميل خلال 2024" data-en="Customers served in 2024">عميل خلال 2024</span></div>
-      <div class="kpi"><strong>3.4x</strong><span data-ar="مستهدف نمو الإيرادات" data-en="Target revenue growth">مستهدف نمو الإيرادات</span></div>
+      <div class="kpi"><strong class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>52M</bdi></strong><span data-ar="إجمالي الأصول في 2025" data-en="Total assets in 2025">إجمالي الأصول في 2025</span></div>
+      <div class="kpi"><strong><bdi>%30</bdi></strong><span data-ar="نسبة استخدام الطاقة حاليا" data-en="Current capacity use">نسبة استخدام الطاقة حاليا</span></div>
+      <div class="kpi"><strong><bdi>%36.2</bdi></strong><span data-ar="هامش الربح الإجمالي في 2025" data-en="2025 gross margin">هامش الربح الإجمالي في 2025</span></div>
+      <div class="kpi"><strong><bdi>%19–%23</bdi></strong><span data-ar="عائد سنوي مستهدف | خيار النمو" data-en="Target annual return | Growth option">عائد سنوي مستهدف | خيار النمو</span></div>
+      <div class="kpi"><strong><bdi>%17–%21</bdi></strong><span data-ar="عائد سنوي مستهدف | خيار الشراكة" data-en="Target annual return | Strategic option">عائد سنوي مستهدف | خيار الشراكة</span></div>
     </div>
   </section>
 
@@ -414,31 +449,31 @@
       <section class="section">
         <div class="section-heading">
           <div>
-            <div class="section-kicker" data-ar="لماذا تستحق الفرصة النظر؟" data-en="Why this deserves a closer look">لماذا تستحق الفرصة النظر؟</div>
-            <h2 data-ar="أصول قائمة ومساحة نمو داخل المصنع" data-en="Established assets with room to scale">أصول قائمة ومساحة نمو داخل المصنع</h2>
+            <div class="section-kicker" data-ar="لماذا تستحق الدراسة؟" data-en="Why this deserves a closer look">لماذا تستحق الدراسة؟</div>
+            <h2 data-ar="مصنع قائم ومساحة واسعة للنمو" data-en="Established assets with room to scale">مصنع قائم ومساحة واسعة للنمو</h2>
           </div>
-          <p class="section-intro" data-ar="الفرصة تبدأ من مصنع قائم. الاستثمار يشغل طاقة موجودة، ويمول دورة العمل، ويحول القدرة الصناعية إلى مبيعات أعلى." data-en="The opportunity starts with an established plant. The investment activates existing capacity, funds the operating cycle, and converts industrial capability into higher sales.">الفرصة تبدأ من مصنع قائم. الاستثمار يشغل طاقة موجودة، ويمول دورة العمل، ويحول القدرة الصناعية إلى مبيعات أعلى.</p>
+          <p class="section-intro" data-ar="الفرصة تبدأ من مصنع يعمل بالفعل. الاستثمار يرفع الاستفادة من الطاقة المتاحة، ويمول رأس المال العامل، ويدعم نمو المبيعات." data-en="The opportunity starts with an established plant. The investment activates existing capacity, funds the operating cycle, and converts industrial capability into higher sales.">الفرصة تبدأ من مصنع يعمل بالفعل. الاستثمار يرفع الاستفادة من الطاقة المتاحة، ويمول رأس المال العامل، ويدعم نمو المبيعات.</p>
         </div>
         <div class="proof-grid">
           <article class="proof-card">
             <div class="proof-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M3 21V9l6 3V8l6 4V5h6v16H3Z"/><path d="M7 17h2m4 0h2m4 0h2"/></svg></div>
-            <h3 data-ar="منشأة تتجاوز 22,000 م²" data-en="22,000+ sqm facility">منشأة تتجاوز 22,000 م²</h3>
-            <p data-ar="قاعدة صناعية في المدينة الصناعية الثالثة بجدة، مع طاقة حالية غير مستغلة." data-en="An industrial base in Jeddah's Third Industrial City with available capacity.">قاعدة صناعية في المدينة الصناعية الثالثة بجدة، مع طاقة حالية غير مستغلة.</p>
+            <h3 data-ar="منشأة صناعية تتجاوز مساحتها 22,000 م²" data-en="22,000+ sqm facility">منشأة صناعية تتجاوز مساحتها 22,000 م²</h3>
+            <p data-ar="مصنع في المدينة الصناعية الثالثة بجدة، وطاقة إنتاجية متاحة للنمو." data-en="An industrial base in Jeddah's Third Industrial City with available capacity.">مصنع في المدينة الصناعية الثالثة بجدة، وطاقة إنتاجية متاحة للنمو.</p>
           </article>
           <article class="proof-card">
             <div class="proof-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 19V9m8 10V5m8 14v-7"/><path d="m3 7 7-4 5 3 6-4"/></svg></div>
-            <h3 data-ar="ربحية قائمة عند تشغيل %30" data-en="Profitable at %30 utilization">ربحية قائمة عند تشغيل %30</h3>
-            <p data-ar="حققت الشركة هامش صافي %6.8 في 2025، مع مساحة لتحسين التشغيل عند نمو المبيعات." data-en="The company achieved a %6.8 net margin in 2025, with operating leverage available as sales grow.">حققت الشركة هامش صافي %6.8 في 2025، مع مساحة لتحسين التشغيل عند نمو المبيعات.</p>
+            <h3 data-ar="ربحية عند استخدام %30 من الطاقة" data-en="Profitable at %30 utilization">ربحية عند استخدام %30 من الطاقة</h3>
+            <p data-ar="حققت الشركة هامش صافي ربح %6.8 في 2025، ويمكن تحسين الكفاءة مع نمو المبيعات." data-en="The company achieved a %6.8 net margin in 2025, with operating leverage available as sales grow.">حققت الشركة هامش صافي ربح %6.8 في 2025، ويمكن تحسين الكفاءة مع نمو المبيعات.</p>
           </article>
           <article class="proof-card">
             <div class="proof-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
             <h3 data-ar="قاعدة عملاء متنوعة" data-en="Diversified customer base">قاعدة عملاء متنوعة</h3>
-            <p data-ar="خدمت الشركة 83 عميل خلال 2024، ويمثل أكبر عميل %14 كحد أقصى من الإيرادات." data-en="The company served 83 customers in 2024, with the largest customer contributing no more than %14 of revenue.">خدمت الشركة 83 عميل خلال 2024، ويمثل أكبر عميل %14 كحد أقصى من الإيرادات.</p>
+            <p data-ar="خدمت الشركة 83 عميل خلال 2024، وبلغت حصة أكبر عميل %14 من الإيرادات." data-en="The company served 83 customers in 2024, with the largest customer contributing no more than %14 of revenue.">خدمت الشركة 83 عميل خلال 2024، وبلغت حصة أكبر عميل %14 من الإيرادات.</p>
           </article>
           <article class="proof-card">
             <div class="proof-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></div>
-            <h3 data-ar="مؤهلات تدعم دخول المشاريع" data-en="Credentials supporting market access">مؤهلات تدعم دخول المشاريع</h3>
-            <p data-ar="شهادة صنع في السعودية، واعتمادات جودة وسلامة، ومشاركة في برنامج AMP المرتبط بصندوق الاستثمارات العامة." data-en="Made in Saudi certification, quality and safety credentials, and participation in the PIF-linked AMP program.">شهادة صنع في السعودية، واعتمادات جودة وسلامة، ومشاركة في برنامج AMP المرتبط بصندوق الاستثمارات العامة.</p>
+            <h3 data-ar="اعتمادات تدعم التوسع في المشاريع" data-en="Credentials supporting market access">اعتمادات تدعم التوسع في المشاريع</h3>
+            <p data-ar="شهادة صنع في السعودية، واعتمادات للجودة والسلامة، ومشاركة في برنامج AMP المرتبط بصندوق الاستثمارات العامة." data-en="Made in Saudi certification, quality and safety credentials, and participation in the PIF-linked AMP program.">شهادة صنع في السعودية، واعتمادات للجودة والسلامة، ومشاركة في برنامج AMP المرتبط بصندوق الاستثمارات العامة.</p>
           </article>
         </div>
       </section>
@@ -446,17 +481,17 @@
       <section class="section">
         <div class="growth-panel">
           <div class="growth-copy">
-            <div class="section-kicker" data-ar="مستهدف النمو" data-en="Growth target">مستهدف النمو</div>
+            <div class="section-kicker" data-ar="خطة نمو الإيرادات" data-en="Growth target">خطة نمو الإيرادات</div>
             <div class="big">3.4x</div>
             <h3><span data-ar="من" data-en="From">من</span> <span class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>22.1M</bdi></span> <span data-ar="إلى أكثر من" data-en="to more than">إلى أكثر من</span> <span class="sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>75M</bdi></span></h3>
-            <p data-ar="المستهدف يعتمد على رفع استغلال الطاقة، تمويل المواد الخام، تسريع المبيعات وتحسين كفاءة التشغيل. تفاصيل الافتراضات والعقود تظهر بعد NDA." data-en="The target depends on higher capacity utilization, raw-material funding, faster sales execution, and operating efficiency. Detailed assumptions and contracts are available after the NDA.">المستهدف يعتمد على رفع استغلال الطاقة، تمويل المواد الخام، تسريع المبيعات وتحسين كفاءة التشغيل. تفاصيل الافتراضات والعقود تظهر بعد NDA.</p>
+            <p data-ar="يعتمد تحقيق المستهدف على رفع استخدام الطاقة الإنتاجية، وتمويل المواد الخام، وتنمية المبيعات، وتحسين التشغيل. وتعرض الافتراضات والعقود بعد توقيع اتفاقية السرية." data-en="The target depends on higher capacity utilization, raw-material funding, faster sales execution, and operating efficiency. Detailed assumptions and contracts are available after the NDA.">يعتمد تحقيق المستهدف على رفع استخدام الطاقة الإنتاجية، وتمويل المواد الخام، وتنمية المبيعات، وتحسين التشغيل. وتعرض الافتراضات والعقود بعد توقيع اتفاقية السرية.</p>
           </div>
           <div class="chart" role="img" aria-label="Revenue growth targets">
             <div class="bar-row"><span class="bar-year">2025</span><div class="bar-track"><div class="bar-fill bar-fill-2025" data-ar="فعلي" data-en="Actual">فعلي</div></div><span class="bar-value sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>22.1M</bdi></span></div>
             <div class="bar-row"><span class="bar-year">2026</span><div class="bar-track"><div class="bar-fill bar-fill-2026" data-ar="مستهدف" data-en="Target">مستهدف</div></div><span class="bar-value sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>42M</bdi></span></div>
             <div class="bar-row"><span class="bar-year">2028</span><div class="bar-track"><div class="bar-fill bar-fill-2028" data-ar="مستهدف" data-en="Target">مستهدف</div></div><span class="bar-value sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>65M</bdi></span></div>
             <div class="bar-row"><span class="bar-year">2029</span><div class="bar-track"><div class="bar-fill bar-fill-2029" data-ar="مستهدف" data-en="Target">مستهدف</div></div><span class="bar-value sar-amount"><i class="riyal-symbol" aria-hidden="true"></i><bdi>75M+</bdi></span></div>
-            <div class="chart-note" data-ar="مستهدفات الإدارة، وتخضع للتحقق ضمن الفحص النافي للجهالة." data-en="Management targets, subject to validation during due diligence.">مستهدفات الإدارة، وتخضع للتحقق ضمن الفحص النافي للجهالة.</div>
+            <div class="chart-note" data-ar="مستهدفات الإدارة وتخضع للمراجعة أثناء الفحص النافي للجهالة." data-en="Management targets, subject to validation during due diligence.">مستهدفات الإدارة وتخضع للمراجعة أثناء الفحص النافي للجهالة.</div>
           </div>
         </div>
       </section>
@@ -464,49 +499,49 @@
       <section class="section">
         <div class="section-heading">
           <div>
-            <div class="section-kicker" data-ar="ماذا يغير الاستثمار؟" data-en="What does the investment unlock?">ماذا يغير الاستثمار؟</div>
-            <h2 data-ar="رأس المال يذهب إلى التشغيل والنمو" data-en="Capital directed to operations and growth">رأس المال يذهب إلى التشغيل والنمو</h2>
+            <div class="section-kicker" data-ar="أين يذهب الاستثمار؟" data-en="What does the investment unlock?">أين يذهب الاستثمار؟</div>
+            <h2 data-ar="الاستثمار للتشغيل والنمو" data-en="Capital directed to operations and growth">الاستثمار للتشغيل والنمو</h2>
           </div>
-          <p class="section-intro" data-ar="المصنع موجود، والعملاء موجودون، والطاقة متاحة. المطلوب تمويل دورة النمو وربط ضخ المال بنتائج تشغيلية قابلة للقياس." data-en="The plant exists, the customer base exists, and capacity is available. The investment funds the growth cycle and ties capital deployment to measurable operating outcomes.">المصنع موجود، والعملاء موجودون، والطاقة متاحة. المطلوب تمويل دورة النمو وربط ضخ المال بنتائج تشغيلية قابلة للقياس.</p>
+          <p class="section-intro" data-ar="المصنع قائم، والعملاء موجودون، والطاقة متاحة. يمول الاستثمار دورة التشغيل، ويربط الصرف بمؤشرات تشغيلية يمكن قياسها." data-en="The plant exists, the customer base exists, and capacity is available. The investment funds the growth cycle and ties capital deployment to measurable operating outcomes.">المصنع قائم، والعملاء موجودون، والطاقة متاحة. يمول الاستثمار دورة التشغيل، ويربط الصرف بمؤشرات تشغيلية يمكن قياسها.</p>
         </div>
         <div class="money-grid">
-          <article class="money-card"><span class="money-number">1</span><h3 data-ar="تمويل دورة التشغيل" data-en="Fund the operating cycle">تمويل دورة التشغيل</h3><p data-ar="مواد خام ومخزون تشغيلي يتيح تنفيذ طلبات أكبر وتقليل أثر نقص السيولة على الإنتاج." data-en="Raw materials and operating inventory to fulfill larger orders and reduce working-capital constraints.">مواد خام ومخزون تشغيلي يتيح تنفيذ طلبات أكبر وتقليل أثر نقص السيولة على الإنتاج.</p></article>
-          <article class="money-card"><span class="money-number">2</span><h3 data-ar="رفع كفاءة المصنع" data-en="Increase plant efficiency">رفع كفاءة المصنع</h3><p data-ar="العمالة والتجهيزات اللازمة لرفع استغلال الطاقة وربط التوسع بمراحل إنتاج محددة." data-en="Workforce and required equipment to increase utilization through defined production milestones.">العمالة والتجهيزات اللازمة لرفع استغلال الطاقة وربط التوسع بمراحل إنتاج محددة.</p></article>
-          <article class="money-card"><span class="money-number">3</span><h3 data-ar="تسريع المبيعات والتحصيل" data-en="Accelerate sales and collections">تسريع المبيعات والتحصيل</h3><p data-ar="توسيع الوصول إلى العملاء والمشاريع وتحسين إدارة العقود والتحصيل." data-en="Expand access to customers and projects while strengthening contract and collection management.">توسيع الوصول إلى العملاء والمشاريع وتحسين إدارة العقود والتحصيل.</p></article>
+          <article class="money-card"><span class="money-number">1</span><h3 data-ar="تمويل التشغيل" data-en="Fund the operating cycle">تمويل التشغيل</h3><p data-ar="توفير المواد الخام والمخزون اللازم لتنفيذ طلبات أكبر واستمرار الإنتاج." data-en="Raw materials and operating inventory to fulfill larger orders and reduce working-capital constraints.">توفير المواد الخام والمخزون اللازم لتنفيذ طلبات أكبر واستمرار الإنتاج.</p></article>
+          <article class="money-card"><span class="money-number">2</span><h3 data-ar="رفع كفاءة المصنع" data-en="Increase plant efficiency">رفع كفاءة المصنع</h3><p data-ar="استقطاب العمالة وتوفير التجهيزات اللازمة لرفع الاستفادة من الطاقة على مراحل." data-en="Workforce and required equipment to increase utilization through defined production milestones.">استقطاب العمالة وتوفير التجهيزات اللازمة لرفع الاستفادة من الطاقة على مراحل.</p></article>
+          <article class="money-card"><span class="money-number">3</span><h3 data-ar="تنمية المبيعات والتحصيل" data-en="Accelerate sales and collections">تنمية المبيعات والتحصيل</h3><p data-ar="الوصول إلى عملاء ومشاريع جديدة، وتحسين إدارة العقود والتحصيل." data-en="Expand access to customers and projects while strengthening contract and collection management.">الوصول إلى عملاء ومشاريع جديدة، وتحسين إدارة العقود والتحصيل.</p></article>
         </div>
         <div class="signal-strip">
           <div class="signal"><strong>2010</strong><span data-ar="بداية التشغيل" data-en="Operating since">بداية التشغيل</span></div>
           <div class="signal"><strong><bdi>22,000+ m²</bdi></strong><span data-ar="مساحة المنشأة" data-en="Facility footprint">مساحة المنشأة</span></div>
-          <div class="signal"><strong><bdi>%14</bdi></strong><span data-ar="أكبر عميل من الإيرادات" data-en="Largest customer share">أكبر عميل من الإيرادات</span></div>
-          <div class="signal"><strong><bdi>%6.8</bdi></strong><span data-ar="هامش صافي 2025" data-en="2025 net margin">هامش صافي 2025</span></div>
+          <div class="signal"><strong><bdi>%14</bdi></strong><span data-ar="حصة أكبر عميل من الإيرادات" data-en="Largest customer share">حصة أكبر عميل من الإيرادات</span></div>
+          <div class="signal"><strong><bdi>%6.8</bdi></strong><span data-ar="هامش صافي الربح في 2025" data-en="2025 net margin">هامش صافي الربح في 2025</span></div>
         </div>
       </section>
 
       <section class="section">
         <div class="section-heading">
           <div>
-            <div class="section-kicker" data-ar="ملامح الصفقة" data-en="Transaction profile">ملامح الصفقة</div>
-            <h2 data-ar="فرصة قابلة للهيكلة لمستثمر مؤسسي" data-en="A transaction that can be structured for institutional capital">فرصة قابلة للهيكلة لمستثمر مؤسسي</h2>
+            <div class="section-kicker" data-ar="هيكل الصفقة" data-en="Transaction profile">هيكل الصفقة</div>
+            <h2 data-ar="صفقة تناسب المستثمر المؤسسي" data-en="A transaction that can be structured for institutional capital">صفقة تناسب المستثمر المؤسسي</h2>
           </div>
-          <p class="section-intro" data-ar="القيمة تجمع بين أصل صناعي منتج، وحصة أقلية، وخطة نمو قابلة للقياس، وحقوق حوكمة تحمي دور المستثمر." data-en="The value case combines productive industrial assets, minority equity, a measurable growth plan, and governance rights that protect the investor's role.">القيمة تجمع بين أصل صناعي منتج، وحصة أقلية، وخطة نمو قابلة للقياس، وحقوق حوكمة تحمي دور المستثمر.</p>
+          <p class="section-intro" data-ar="تجمع الفرصة بين مصنع يعمل بالفعل، وحصة أقلية، وخطة نمو قابلة للقياس، وحقوق حوكمة تحفظ دور المستثمر." data-en="The value case combines productive industrial assets, minority equity, a measurable growth plan, and governance rights that protect the investor's role.">تجمع الفرصة بين مصنع يعمل بالفعل، وحصة أقلية، وخطة نمو قابلة للقياس، وحقوق حوكمة تحفظ دور المستثمر.</p>
         </div>
         <div class="fit-grid">
           <article class="fit-card">
-            <div class="fit-label" data-ar="الانكشاف الاستثماري" data-en="Investment exposure">الانكشاف الاستثماري</div>
-            <h3 data-ar="صناعة سعودية مرتبطة بالنقل والخدمات اللوجستية" data-en="Saudi industrial exposure linked to transport and logistics">صناعة سعودية مرتبطة بالنقل والخدمات اللوجستية</h3>
-            <p data-ar="منشأة قائمة في جدة، ومنتجات تخدم احتياجات النقل الثقيل والعملاء الصناعيين والمشاريع." data-en="An operating facility in Jeddah serving heavy transport, industrial customers, and project demand.">منشأة قائمة في جدة، ومنتجات تخدم احتياجات النقل الثقيل والعملاء الصناعيين والمشاريع.</p>
+            <div class="fit-label" data-ar="مجال الاستثمار" data-en="Investment exposure">مجال الاستثمار</div>
+            <h3 data-ar="تصنيع سعودي يخدم النقل والخدمات اللوجستية" data-en="Saudi industrial exposure linked to transport and logistics">تصنيع سعودي يخدم النقل والخدمات اللوجستية</h3>
+            <p data-ar="مصنع قائم في جدة، ومنتجات تخدم النقل الثقيل والمنشآت الصناعية والمشاريع." data-en="An operating facility in Jeddah serving heavy transport, industrial customers, and project demand.">مصنع قائم في جدة، ومنتجات تخدم النقل الثقيل والمنشآت الصناعية والمشاريع.</p>
             <div class="fit-meta"><span>Saudi Arabia</span><span>Industrial</span><span>Logistics</span></div>
           </article>
           <article class="fit-card">
-            <div class="fit-label" data-ar="طريقة الدخول" data-en="Entry structure">طريقة الدخول</div>
+            <div class="fit-label" data-ar="صيغة الاستثمار" data-en="Entry structure">صيغة الاستثمار</div>
             <h3 data-ar="حصة أقلية مع دور في الحوكمة" data-en="Minority equity with governance participation">حصة أقلية مع دور في الحوكمة</h3>
-            <p data-ar="الهيكلة المقترحة تمنح المستثمر مقعد في مجلس الإدارة، وتقارير دورية، وحقوق مرتبطة بالقرارات الجوهرية." data-en="The proposed structure includes a board seat, periodic reporting, and rights over material decisions.">الهيكلة المقترحة تمنح المستثمر مقعد في مجلس الإدارة، وتقارير دورية، وحقوق مرتبطة بالقرارات الجوهرية.</p>
-            <div class="fit-meta"><span>%23.5</span><span>Board Seat</span><span>Information Rights</span></div>
+            <p data-ar="يحصل المستثمر على مقعد في مجلس الإدارة، وتقارير دورية، وحقوق في القرارات الجوهرية." data-en="The proposed structure includes a board seat, periodic reporting, and rights over material decisions.">يحصل المستثمر على مقعد في مجلس الإدارة، وتقارير دورية، وحقوق في القرارات الجوهرية.</p>
+            <div class="fit-meta"><span>2 Entry Options</span><span>Board Seat</span><span>Information Rights</span></div>
           </article>
           <article class="fit-card">
-            <div class="fit-label" data-ar="بناء التخارج" data-en="Exit planning">بناء التخارج</div>
-            <h3 data-ar="أكثر من مسار قابل للدراسة" data-en="Multiple exit routes to evaluate">أكثر من مسار قابل للدراسة</h3>
-            <p data-ar="بيع لمستثمر استراتيجي، أو صندوق نمو، أو صفقة ثانوية، مع دراسة سوق نمو عند بلوغ الجاهزية." data-en="Strategic sale, growth-fund sale, or secondary buyout, with Nomu considered when the company reaches listing readiness.">بيع لمستثمر استراتيجي، أو صندوق نمو، أو صفقة ثانوية، مع دراسة سوق نمو عند بلوغ الجاهزية.</p>
+            <div class="fit-label" data-ar="خيارات التخارج" data-en="Exit planning">خيارات التخارج</div>
+            <h3 data-ar="أكثر من خيار للتخارج" data-en="Multiple exit routes to evaluate">أكثر من خيار للتخارج</h3>
+            <p data-ar="بيع الحصة لمستثمر استراتيجي أو صندوق نمو أو مستثمر جديد، مع دراسة الإدراج في سوق نمو عند اكتمال الجاهزية." data-en="Strategic sale, growth-fund sale, or secondary buyout, with Nomu considered when the company reaches listing readiness.">بيع الحصة لمستثمر استراتيجي أو صندوق نمو أو مستثمر جديد، مع دراسة الإدراج في سوق نمو عند اكتمال الجاهزية.</p>
             <div class="fit-meta"><span>Strategic Sale</span><span>Secondary</span><span>Nomu</span></div>
           </article>
         </div>
@@ -515,22 +550,22 @@
       <section class="section" id="nda">
         <div class="nda">
           <div>
-            <div class="section-kicker" data-ar="بعد توقيع NDA" data-en="After signing the NDA">بعد توقيع NDA</div>
-            <h2 data-ar="الأرقام التي تكمل قرار المستثمر" data-en="The information needed to complete the investment view">الأرقام التي تكمل قرار المستثمر</h2>
-            <p data-ar="الملخص العام يعرّف بالفرصة. مذكرة الاستثمار وغرفة البيانات تعرضان ما يلزم للفحص وبناء القرار." data-en="This public teaser introduces the opportunity. The investment memorandum and data room provide the information required for diligence and decision-making.">الملخص العام يعرّف بالفرصة. مذكرة الاستثمار وغرفة البيانات تعرضان ما يلزم للفحص وبناء القرار.</p>
+            <div class="section-kicker" data-ar="بعد توقيع اتفاقية السرية" data-en="After signing the NDA">بعد توقيع اتفاقية السرية</div>
+            <h2 data-ar="معلومات تكمل دراسة الفرصة" data-en="The information needed to complete the investment view">معلومات تكمل دراسة الفرصة</h2>
+            <p data-ar="بعد توقيع اتفاقية السرية، تتاح مذكرة الاستثمار وغرفة البيانات لاستكمال الفحص وتقييم الفرصة." data-en="This public teaser introduces the opportunity. The investment memorandum and data room provide the information required for diligence and decision-making.">بعد توقيع اتفاقية السرية، تتاح مذكرة الاستثمار وغرفة البيانات لاستكمال الفحص وتقييم الفرصة.</p>
           </div>
           <div class="nda-list">
-            <div class="nda-item"><span class="tick">✓</span><span data-ar="القوائم المالية التاريخية وتحليل الهوامش" data-en="Historical financials and margin analysis">القوائم المالية التاريخية وتحليل الهوامش</span></div>
-            <div class="nda-item"><span class="tick">✓</span><span data-ar="تفاصيل العملاء والعقود وفرص المبيعات" data-en="Customer, contract, and pipeline detail">تفاصيل العملاء والعقود وفرص المبيعات</span></div>
+            <div class="nda-item"><span class="tick">✓</span><span data-ar="القوائم المالية السابقة وتحليل الهوامش" data-en="Historical financials and margin analysis">القوائم المالية السابقة وتحليل الهوامش</span></div>
+            <div class="nda-item"><span class="tick">✓</span><span data-ar="تفاصيل العملاء والعقود والمبيعات المتوقعة" data-en="Customer, contract, and pipeline detail">تفاصيل العملاء والعقود والمبيعات المتوقعة</span></div>
             <div class="nda-item"><span class="tick">✓</span><span data-ar="تقييم الأصول والالتزامات والتمويل الصناعي" data-en="Asset appraisal, liabilities, and industrial financing">تقييم الأصول والالتزامات والتمويل الصناعي</span></div>
             <div class="nda-item"><span class="tick">✓</span><span data-ar="نموذج التقييم وسيناريوهات العائد" data-en="Valuation model and return scenarios">نموذج التقييم وسيناريوهات العائد</span></div>
-            <div class="nda-item"><span class="tick">✓</span><span data-ar="خطة استخدام مبلغ الاستثمار ومراحل الصرف" data-en="Use of funds and deployment milestones">خطة استخدام مبلغ الاستثمار ومراحل الصرف</span></div>
+            <div class="nda-item"><span class="tick">✓</span><span data-ar="خطة استخدام الاستثمار ومراحل الصرف" data-en="Use of funds and deployment milestones">خطة استخدام الاستثمار ومراحل الصرف</span></div>
             <div class="nda-item"><span class="tick">✓</span><span data-ar="الهيكلة النظامية والشرعية وحقوق المستثمر" data-en="Legal and Shari'a structuring and investor rights">الهيكلة النظامية والشرعية وحقوق المستثمر</span></div>
           </div>
         </div>
         <div class="next-step">
-          <div><strong data-ar="هل تقع الفرصة ضمن نطاق استثماركم؟" data-en="Does this opportunity fit your investment mandate?">هل تقع الفرصة ضمن نطاق استثماركم؟</strong><span data-ar="اطلب من مرسل الرابط اتفاقية NDA ومذكرة الاستثمار الكاملة، ثم رتّب زيارة المصنع." data-en="Request the NDA and full investment memorandum from the person who shared this link, then arrange a factory visit.">اطلب من مرسل الرابط اتفاقية NDA ومذكرة الاستثمار الكاملة، ثم رتّب زيارة المصنع.</span></div>
-          <a href="#opportunity" class="btn" data-ar="مراجعة ملخص الصفقة" data-en="Review deal snapshot">مراجعة ملخص الصفقة</a>
+          <div><strong data-ar="هل تناسب الفرصة توجهكم الاستثماري؟" data-en="Does this opportunity fit your investment mandate?">هل تناسب الفرصة توجهكم الاستثماري؟</strong><span data-ar="اطلب اتفاقية السرية ومذكرة الاستثمار من مرسل الرابط، ثم رتب زيارة المصنع." data-en="Request the NDA and full investment memorandum from the person who shared this link, then arrange a factory visit.">اطلب اتفاقية السرية ومذكرة الاستثمار من مرسل الرابط، ثم رتب زيارة المصنع.</span></div>
+          <a href="#opportunity" class="btn" data-ar="العودة إلى أرقام الصفقة" data-en="Review deal snapshot">العودة إلى أرقام الصفقة</a>
         </div>
       </section>
     </div>
@@ -540,17 +575,17 @@
     <div class="shell">
       <div class="references-card">
         <div class="reference-copy">
-          <strong data-ar="مراجع مرتبطة بالفرصة" data-en="Opportunity references">مراجع مرتبطة بالفرصة</strong>
-          <span data-ar="مصادر لقراءة السوق والسياق الصناعي واللوجستي." data-en="Sources for the market, industrial, and logistics context.">مصادر لقراءة السوق والسياق الصناعي واللوجستي.</span>
+          <strong data-ar="مصادر ذات صلة" data-en="Opportunity references">مصادر ذات صلة</strong>
+          <span data-ar="مصادر تساعد على قراءة السوق والقطاع الصناعي واللوجستي." data-en="Sources for the market, industrial, and logistics context.">مصادر تساعد على قراءة السوق والقطاع الصناعي واللوجستي.</span>
         </div>
         <div class="reference-links">
           <a class="reference-link" href="https://sukuk.sa/blog/72" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3ZM5 5h6v2H5v12h12v-6h2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/></svg>
-            <span data-ar="قطاع الخدمات اللوجستية السعودي — صكوك كابيتال، أبريل 2026" data-en="Saudi Logistics Sector — Sukuk Capital, April 2026">قطاع الخدمات اللوجستية السعودي — صكوك كابيتال، أبريل 2026</span>
+            <span data-ar="قطاع الخدمات اللوجستية السعودي | صكوك كابيتال | أبريل 2026" data-en="Saudi Logistics Sector — Sukuk Capital, April 2026">قطاع الخدمات اللوجستية السعودي | صكوك كابيتال | أبريل 2026</span>
           </a>
           <a class="reference-link" href="https://www.vision2030.gov.sa/ar/explore/programs/national-industrial-development-and-logistics-program" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3ZM5 5h6v2H5v12h12v-6h2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/></svg>
-            <span data-ar="برنامج ندلب" data-en="NIDLP">برنامج ندلب</span>
+            <span data-ar="برنامج تطوير الصناعة الوطنية والخدمات اللوجستية (ندلب)" data-en="NIDLP">برنامج تطوير الصناعة الوطنية والخدمات اللوجستية (ندلب)</span>
           </a>
           <a class="reference-link" href="https://www.vision2030.gov.sa/ar" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3ZM5 5h6v2H5v12h12v-6h2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/></svg>
@@ -564,7 +599,7 @@
           <img src="itc-logo.jpg" alt="شعار شركة المقطورة الدولية">
           <div>
             <strong data-ar="شركة المقطورة الدولية" data-en="International Trailer Company">شركة المقطورة الدولية</strong>
-            <span data-ar="للتعرف على حضور الشركة وآخر أخبارها" data-en="Explore the company's presence and latest updates">للتعرف على حضور الشركة وآخر أخبارها</span>
+            <span data-ar="للتعرف على الشركة وآخر أخبارها" data-en="Explore the company's presence and latest updates">للتعرف على الشركة وآخر أخبارها</span>
           </div>
         </div>
         <nav class="company-links" aria-label="Company links">
@@ -579,7 +614,7 @@
         </nav>
       </div>
 
-      <p class="public-note" data-ar="نسخة تعريفية أولية لأغراض المناقشة. الأرقام المستهدفة تقديرية وتخضع للفحص النافي للجهالة والاتفاقيات النهائية، ولا تمثل عرض أو التزام ملزم." data-en="Preliminary teaser for discussion purposes. Targets are indicative and subject to due diligence and final agreements. Nothing herein constitutes a binding offer or commitment.">نسخة تعريفية أولية لأغراض المناقشة. الأرقام المستهدفة تقديرية وتخضع للفحص النافي للجهالة والاتفاقيات النهائية، ولا تمثل عرض أو التزام ملزم.</p>
+      <p class="public-note" data-ar="نسخة تعريفية لأغراض المناقشة. الأرقام المستهدفة تقديرية وتخضع للفحص النافي للجهالة والاتفاقيات النهائية، وأي عرض استثماري يعتمد على وثائق الصفقة النهائية." data-en="Preliminary teaser for discussion purposes. Targets are indicative and subject to due diligence and final agreements. Nothing herein constitutes a binding offer or commitment.">نسخة تعريفية لأغراض المناقشة. الأرقام المستهدفة تقديرية وتخضع للفحص النافي للجهالة والاتفاقيات النهائية، وأي عرض استثماري يعتمد على وثائق الصفقة النهائية.</p>
     </div>
   </section>
 
@@ -589,7 +624,6 @@
         <img src="naif-logo-v2.png" alt="نايف المحمدي">
         <div class="footer-copy">
           <strong data-ar="مستشار الحوكمة وتطوير الأعمال" data-en="Governance & Business Development Advisor">مستشار الحوكمة وتطوير الأعمال</strong>
-          <span class="footer-version" data-ar="الإصدار 2.0.0 | أغسطس 2026" data-en="Version 2.0.0 | August 2026">الإصدار 2.0.0 | أغسطس 2026</span>
         </div>
       </div>
       <nav class="footer-social" aria-label="Naif Al-Mohammadi social links">
@@ -613,6 +647,9 @@
         : 'فرصة استثمارية | شركة المقطورة الدولية ITC';
       document.querySelectorAll('[data-ar][data-en]').forEach((element) => {
         element.textContent = element.dataset[lang];
+      });
+      document.querySelectorAll('[data-copy-lang]').forEach((element) => {
+        element.hidden = element.dataset.copyLang !== lang;
       });
       languageButtons.forEach((button) => {
         const active = button.dataset.lang === lang;
